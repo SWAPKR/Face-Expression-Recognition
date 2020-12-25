@@ -36,7 +36,7 @@ import time
 class FaceCropper(object):
 #     cv2_base_dir = os.path.dirname(os.path.abspath(cv2.__file__))
 #     CASCADE_PATH = os.path.join(cv2_base_dir, 'data/haarcascade_frontalface_default.xml')
-    CASCADE_PATH='../src/haarcascade_frontalface_default.xml'
+    CASCADE_PATH='src/haarcascade_frontalface_default.xml'
     #  = "data/haarcascades/haarcascade_frontalface_default.xml"
 
     def __init__(self):
@@ -86,7 +86,7 @@ class FaceCropper(object):
 
 @st.cache   
 def pred():
-    return load_model(f"../saved_model/senti_saved_model.h5")
+    return load_model(f"saved_model/senti_saved_model.h5")
 
 
 
