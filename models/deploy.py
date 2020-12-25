@@ -93,10 +93,10 @@ def arrange(arr1):
     p=k.copy()
     k.sort(reverse=True)
     for i in range(0,len(k)):
-    # print(k)
-    # print(p)
-    aa=p.index(k[i])
-    m.append(aa)
+        # print(k)
+        # print(p)
+        aa=p.index(k[i])
+        m.append(aa)
     return m
 
 
@@ -105,7 +105,7 @@ detecter = FaceCropper()
 a=detecter.generate(b, True)
 # st.write(a)
 l=len(a)
-emo     = ['Angry','Disgust', 'Fear', 'Happy',
+emo = ['Angry','Disgust', 'Fear', 'Happy',
            'Sad', 'Surprise', 'Neutral']
 
 for i in range(0,l):
